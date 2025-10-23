@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
@@ -28,31 +27,32 @@ export const Navbar = () => {
       >
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <a href="#" onClick={(e) => e.preventDefault()} className="flex items-center gap-3 group cursor-default">
             <img src={logo} alt="Nós do Atlântico" className="h-10 w-10 transition-transform group-hover:scale-105" />
             <span className="text-primary font-bold text-lg hidden sm:block">Nós do Atlântico</span>
-          </Link>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <Link to="/rotas" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="#" onClick={(e) => e.preventDefault()} className="text-foreground hover:text-primary transition-colors font-medium cursor-default">
               Rotas
-            </Link>
-            <Link to="/sobre" className="text-foreground hover:text-primary transition-colors font-medium">
+            </a>
+            <a href="#" onClick={(e) => e.preventDefault()} className="text-foreground hover:text-primary transition-colors font-medium cursor-default">
               Sobre Nós
-            </Link>
-            <Link to="/parceiros" className="text-foreground hover:text-primary transition-colors font-medium">
+            </a>
+            <a href="#" onClick={(e) => e.preventDefault()} className="text-foreground hover:text-primary transition-colors font-medium cursor-default">
               Parceiros
-            </Link>
+            </a>
           </div>
 
           {/* CTA Button */}
-          <Link
-            to="/parceiro"
-            className="hidden md:block bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-medium hover:bg-primary/90 transition-colors shadow-md"
+          <a
+            href="#"
+            onClick={(e) => e.preventDefault()}
+            className="hidden md:block bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-medium hover:bg-primary/90 transition-colors shadow-md cursor-default"
           >
             Seja Parceiro
-          </Link>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -66,34 +66,34 @@ export const Navbar = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pt-4 border-t border-border space-y-3 animate-in slide-in-from-top">
-            <Link
-              to="/rotas"
-              className="block text-foreground hover:text-primary transition-colors font-medium py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
+            <a
+              href="#"
+              onClick={(e) => { e.preventDefault(); setIsMobileMenuOpen(false); }}
+              className="block text-foreground hover:text-primary transition-colors font-medium py-2 cursor-default"
             >
               Rotas
-            </Link>
-            <Link
-              to="/sobre"
-              className="block text-foreground hover:text-primary transition-colors font-medium py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
+            </a>
+            <a
+              href="#"
+              onClick={(e) => { e.preventDefault(); setIsMobileMenuOpen(false); }}
+              className="block text-foreground hover:text-primary transition-colors font-medium py-2 cursor-default"
             >
               Sobre Nós
-            </Link>
-            <Link
-              to="/parceiros"
-              className="block text-foreground hover:text-primary transition-colors font-medium py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
+            </a>
+            <a
+              href="#"
+              onClick={(e) => { e.preventDefault(); setIsMobileMenuOpen(false); }}
+              className="block text-foreground hover:text-primary transition-colors font-medium py-2 cursor-default"
             >
               Parceiros
-            </Link>
-            <Link
-              to="/parceiro"
-              className="block bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-medium text-center"
-              onClick={() => setIsMobileMenuOpen(false)}
+            </a>
+            <a
+              href="#"
+              onClick={(e) => { e.preventDefault(); setIsMobileMenuOpen(false); }}
+              className="block bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-medium text-center cursor-default"
             >
               Seja Parceiro
-            </Link>
+            </a>
           </div>
         )}
       </div>

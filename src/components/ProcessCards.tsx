@@ -2,19 +2,19 @@ import { MapPin, Settings, Compass } from "lucide-react";
 
 const steps = [
   {
-    icon: MapPin,
-    title: "Acesse Nossa Aba de Rotas",
-    description: "Navegue por nossa plataforma intuitiva e descubra as possibilidades de experiências no litoral paranaense.",
+    icon: Settings,
+    title: "Acesse e Personalize",
+    description: "Configure suas preferências de gastronomia, cultura e natureza para criar sua experiência ideal.",
   },
   {
-    icon: Settings,
-    title: "Configure Suas Preferências",
-    description: "Escolha o que mais te interessa: gastronomia caiçara, cultura local, trilhas na Mata Atlântica ou tudo junto.",
+    icon: MapPin,
+    title: "Conecte-se com Empreendedores",
+    description: "Descubra negócios locais autênticos e apoie a economia comunitária do litoral paranaense.",
   },
   {
     icon: Compass,
-    title: "Descubra Sua Rota Ideal",
-    description: "Receba uma rota personalizada e aproveite o melhor do litoral do Paraná com experiências autênticas.",
+    title: "Descubra e Aproveite o Paraná",
+    description: "Receba sua rota personalizada e viva experiências únicas na Mata Atlântica e cultura caiçara.",
   },
 ];
 

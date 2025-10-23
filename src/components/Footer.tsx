@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Instagram, Facebook, Mail } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { useState } from "react";
@@ -56,41 +55,46 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-xl mb-6">Navegação</h4>
             <nav className="flex flex-col gap-3">
-              <Link
-                to="/sobre"
-                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group"
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group cursor-default"
               >
                 <span className="w-0 group-hover:w-6 h-0.5 bg-secondary transition-all duration-300"></span>
                 Sobre Nós
-              </Link>
-              <Link
-                to="/rotas"
-                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group"
+              </a>
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group cursor-default"
               >
                 <span className="w-0 group-hover:w-6 h-0.5 bg-secondary transition-all duration-300"></span>
                 Como Funciona
-              </Link>
-              <Link
-                to="/rotas"
-                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group"
+              </a>
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group cursor-default"
               >
                 <span className="w-0 group-hover:w-6 h-0.5 bg-secondary transition-all duration-300"></span>
                 Roteiros
-              </Link>
-              <Link
-                to="/contato"
-                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group"
+              </a>
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group cursor-default"
               >
                 <span className="w-0 group-hover:w-6 h-0.5 bg-secondary transition-all duration-300"></span>
                 Contato
-              </Link>
-              <Link
-                to="/parceiro"
-                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group"
+              </a>
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group cursor-default"
               >
                 <span className="w-0 group-hover:w-6 h-0.5 bg-secondary transition-all duration-300"></span>
                 Seja Parceiro
-              </Link>
+              </a>
             </nav>
           </div>
 
@@ -99,10 +103,9 @@ export const Footer = () => {
             <h4 className="font-semibold text-xl mb-6">Redes Sociais</h4>
             <div className="flex flex-col gap-4">
               <a
-                href="https://instagram.com/nosdoatlantico"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-secondary transition-all group"
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="flex items-center gap-3 hover:text-secondary transition-all group cursor-default"
               >
                 <div className="bg-primary-foreground/10 p-3 rounded-lg group-hover:bg-secondary group-hover:scale-110 transition-all">
                   <Instagram size={24} />
@@ -110,10 +113,9 @@ export const Footer = () => {
                 <span className="font-medium">@nosdoatlantico</span>
               </a>
               <a
-                href="https://facebook.com/nosdoatlantico"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-secondary transition-all group"
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="flex items-center gap-3 hover:text-secondary transition-all group cursor-default"
               >
                 <div className="bg-primary-foreground/10 p-3 rounded-lg group-hover:bg-secondary group-hover:scale-110 transition-all">
                   <Facebook size={24} />
@@ -121,8 +123,9 @@ export const Footer = () => {
                 <span className="font-medium">Nós do Atlântico</span>
               </a>
               <a
-                href="mailto:contato@nosdoatlantico.com.br"
-                className="flex items-center gap-3 hover:text-secondary transition-all group"
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="flex items-center gap-3 hover:text-secondary transition-all group cursor-default"
               >
                 <div className="bg-primary-foreground/10 p-3 rounded-lg group-hover:bg-secondary group-hover:scale-110 transition-all">
                   <Mail size={24} />
