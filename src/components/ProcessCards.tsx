@@ -8,7 +8,7 @@ const steps = [
   },
   {
     icon: MapPin,
-    title: "Conecte-se com Empreendedores",
+    title: "Conectamos seus interesses a empreendedores locais",
     description: "Descubra negócios locais autênticos e apoie a economia comunitária do litoral paranaense.",
   },
   {

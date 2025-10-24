@@ -11,32 +11,56 @@ const slides = [
     image: heroCoast,
     title: "Sua Rota Caiçara Detalhada:",
     routeSteps: [
-      "Deslocamento (saída de Paranaguá)",
-      "Café da manhã (bolo de jussara, suco de araçá)",
-      "Trilha guiada (observação de fauna local)",
-      "Almoço Caiçara (Barreado ou Peixe)",
-      "Oficina de artesanato",
-      "Retorno"
+      "Início no MAE - Paranaguá",
+      "Café da manhã com bolo de jussara e suco de araçá",
+      "Passeio pela baía de Paranaguá, observação de cetáceos",
+      "Almoço Caiçara com Barreado ou Peixe",
+      "Trilhas Restinga e Manguezal",
+      "Oficina de artesanato"
     ],
     highlight: "Experiência completa de imersão na cultura caiçara",
   },
   {
-    id: 2,
-    image: barreado,
-    title: "Melhores Lugares com Barreado",
-    description: "Descubra os autênticos restaurantes tradicionais que servem o famoso Barreado paranaense.",
-    businessName: "Casa do Barreado Tradicional",
-    businessOwner: "Maria das Graças",
-    businessBio: "Mantendo a tradição caiçara há 30 anos",
-    instagram: "@casadobarreado",
+    id: 1,
+    image: heroCoast,
+    title: "Sua Rota Caiçara Detalhada:",
+    routeSteps: [
+      "Início no MAE - Paranaguá",
+      "Café da manhã com bolo de jussara e suco de araçá",
+      "Passeio pela baía de Paranaguá, observação de cetáceos",
+      "Almoço Caiçara com Barreado ou Peixe",
+      "Trilhas Restinga e Manguezal",
+      "Oficina de artesanato"
+    ],
+    highlight: "Experiência completa de imersão na cultura caiçara",
   },
   {
-    id: 3,
-    image: trail,
-    title: "Trilhas e Observação de Fauna",
-    description:
-      "Explore a Mata Atlântica com guias locais especializados. Observação de aves, fauna nativa e conexão profunda com a natureza.",
-    highlight: "Mais de 200 espécies de aves catalogadas",
+    id: 1,
+    image: heroCoast,
+    title: "Sua Rota Caiçara Detalhada:",
+    routeSteps: [
+      "Início no MAE - Paranaguá",
+      "Café da manhã com bolo de jussara e suco de araçá",
+      "Passeio pela baía de Paranaguá, observação de cetáceos",
+      "Almoço Caiçara com Barreado ou Peixe",
+      "Trilhas Restinga e Manguezal",
+      "Oficina de artesanato"
+    ],
+    highlight: "Experiência completa de imersão na cultura caiçara",
+  },
+  {
+    id: 1,
+    image: heroCoast,
+    title: "Sua Rota Caiçara Detalhada:",
+    routeSteps: [
+      "Início no MAE - Paranaguá",
+      "Café da manhã com bolo de jussara e suco de araçá",
+      "Passeio pela baía de Paranaguá, observação de cetáceos",
+      "Almoço Caiçara com Barreado ou Peixe",
+      "Trilhas Restinga e Manguezal",
+      "Oficina de artesanato"
+    ],
+    highlight: "Experiência completa de imersão na cultura caiçara",
   },
 ];
 
@@ -60,9 +84,6 @@ export const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 pt-32 pb-20 min-h-screen flex flex-col items-center justify-center">
         {/* Main Title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground text-center mb-12 leading-tight">
-          Nós Desvendamos o Litoral. Você Escolhe a Rota.
-        </h1>
 
         <div className="w-full max-w-6xl mx-auto">
           <div className="relative bg-card/95 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden transition-all duration-700">
@@ -96,40 +117,12 @@ export const HeroSection = () => {
                       </li>
                     ))}
                   </ol>
-                ) : (
-                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed transition-all duration-700 ease-in-out">
-                    {slides[currentSlide].description}
-                  </p>
+                ) : (null
                 )}
 
                 {slides[currentSlide].highlight && (
                   <div className="bg-secondary/20 p-4 rounded-lg border-l-4 border-secondary transition-all duration-700 ease-in-out">
                     <p className="text-primary font-semibold">{slides[currentSlide].highlight}</p>
-                  </div>
-                )}
-
-                {slides[currentSlide].businessName && (
-                  <div className="space-y-3 p-5 bg-muted/50 rounded-xl transition-all duration-700 ease-in-out">
-                    <h3 className="font-bold text-primary text-xl">{slides[currentSlide].businessName}</h3>
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-full bg-secondary/30 flex items-center justify-center">
-                        <span className="text-primary font-bold text-lg">MG</span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-foreground">{slides[currentSlide].businessOwner}</p>
-                        <p className="text-sm text-muted-foreground">{slides[currentSlide].businessBio}</p>
-                      </div>
-                    </div>
-                    {slides[currentSlide].instagram && (
-                      <a
-                        href="#"
-                        onClick={(e) => e.preventDefault()}
-                        className="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors text-sm font-medium cursor-default"
-                      >
-                        <span>📷</span>
-                        {slides[currentSlide].instagram}
-                      </a>
-                    )}
                   </div>
                 )}
 

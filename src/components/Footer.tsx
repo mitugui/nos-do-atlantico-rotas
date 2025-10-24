@@ -29,26 +29,6 @@ export const Footer = () => {
             <p className="text-primary-foreground/80 leading-relaxed">
               Conectando pessoas e culturas através do turismo sustentável no litoral paranaense.
             </p>
-
-            <div className="space-y-3">
-              <h4 className="font-semibold text-lg">Nos acompanhe</h4>
-              <form onSubmit={handleNewsletterSubmit} className="space-y-2">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Seu melhor e-mail"
-                  className="w-full px-4 py-3 rounded-lg bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:ring-2 focus:ring-secondary"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg"
-                >
-                  Inscrever-se
-                </button>
-              </form>
-            </div>
           </div>
 
           {/* Column 2 - Navigation */}
@@ -57,40 +37,35 @@ export const Footer = () => {
             <nav className="flex flex-col gap-3">
               <a
                 href="#"
-                onClick={(e) => e.preventDefault()}
-                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group cursor-default"
+                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group"
               >
                 <span className="w-0 group-hover:w-6 h-0.5 bg-secondary transition-all duration-300"></span>
                 Sobre Nós
               </a>
               <a
                 href="#"
-                onClick={(e) => e.preventDefault()}
-                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group cursor-default"
+                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group"
               >
                 <span className="w-0 group-hover:w-6 h-0.5 bg-secondary transition-all duration-300"></span>
                 Como Funciona
               </a>
               <a
                 href="#"
-                onClick={(e) => e.preventDefault()}
-                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group cursor-default"
+                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group"
               >
                 <span className="w-0 group-hover:w-6 h-0.5 bg-secondary transition-all duration-300"></span>
                 Roteiros
               </a>
               <a
-                href="#"
-                onClick={(e) => e.preventDefault()}
-                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group cursor-default"
+                href="mailto:contato@nosdoatlantico.com.br"
+                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group"
               >
                 <span className="w-0 group-hover:w-6 h-0.5 bg-secondary transition-all duration-300"></span>
                 Contato
               </a>
               <a
                 href="#"
-                onClick={(e) => e.preventDefault()}
-                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group cursor-default"
+                className="hover:text-secondary transition-colors inline-flex items-center gap-2 group"
               >
                 <span className="w-0 group-hover:w-6 h-0.5 bg-secondary transition-all duration-300"></span>
                 Seja Parceiro
@@ -103,9 +78,10 @@ export const Footer = () => {
             <h4 className="font-semibold text-xl mb-6">Redes Sociais</h4>
             <div className="flex flex-col gap-4">
               <a
-                href="#"
-                onClick={(e) => e.preventDefault()}
-                className="flex items-center gap-3 hover:text-secondary transition-all group cursor-default"
+                href="https://www.instagram.com/nosdoatlantico"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-secondary transition-all group"
               >
                 <div className="bg-primary-foreground/10 p-3 rounded-lg group-hover:bg-secondary group-hover:scale-110 transition-all">
                   <Instagram size={24} />
@@ -113,24 +89,13 @@ export const Footer = () => {
                 <span className="font-medium">@nosdoatlantico</span>
               </a>
               <a
-                href="#"
-                onClick={(e) => e.preventDefault()}
-                className="flex items-center gap-3 hover:text-secondary transition-all group cursor-default"
-              >
-                <div className="bg-primary-foreground/10 p-3 rounded-lg group-hover:bg-secondary group-hover:scale-110 transition-all">
-                  <Facebook size={24} />
-                </div>
-                <span className="font-medium">Nós do Atlântico</span>
-              </a>
-              <a
-                href="#"
-                onClick={(e) => e.preventDefault()}
-                className="flex items-center gap-3 hover:text-secondary transition-all group cursor-default"
+                href="mailto:nosdoatlantico@gmail.com"
+                className="flex items-center gap-3 hover:text-secondary transition-all group"
               >
                 <div className="bg-primary-foreground/10 p-3 rounded-lg group-hover:bg-secondary group-hover:scale-110 transition-all">
                   <Mail size={24} />
                 </div>
-                <span className="font-medium">contato@nosdoatlantico.com.br</span>
+                <span className="font-medium">nosdoatlantico@gmail.com</span>
               </a>
             </div>
           </div>
