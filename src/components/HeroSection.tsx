@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import heroCoast from "@/assets/hero-coast.jpg";
 import barreado from "@/assets/barreado.jpg";
-import trail from "@/assets/trail.jpg";
+import paisagemBarco from "../assets/paisagem_barco.png";
 import mapRoutes from "@/assets/map-routes.jpg";
+import tie from "../assets/tie.png";
 
 const slides = [
   {
@@ -21,46 +22,26 @@ const slides = [
     highlight: "Experiência completa de imersão na cultura caiçara",
   },
   {
-    id: 1,
-    image: heroCoast,
-    title: "Sua Rota Caiçara Detalhada:",
+    id: 2,
+    image: paisagemBarco,
+    title: "Venha conhcecer o litoral do Paraná, sete municipios com muita sociobiodiversidade para conhecer!",
     routeSteps: [
-      "Início no MAE - Paranaguá",
-      "Café da manhã com bolo de jussara e suco de araçá",
-      "Passeio pela baía de Paranaguá, observação de cetáceos",
-      "Almoço Caiçara com Barreado ou Peixe",
-      "Trilhas Restinga e Manguezal",
-      "Oficina de artesanato"
+      "Turismo de base comunitária e sustentável",
+      "Roteiros personalizados conforme seus interesses",
+      "Apoio a empreendedores locais",
+      "Experiências autênticas na Mata Atlântica",
+      "Descubra a cultura caiçara",
+      "Conexão profunda com a natureza",
     ],
-    highlight: "Experiência completa de imersão na cultura caiçara",
+    highlight: "Venha com a Nós para essa viagem",
   },
   {
-    id: 1,
-    image: heroCoast,
-    title: "Sua Rota Caiçara Detalhada:",
-    routeSteps: [
-      "Início no MAE - Paranaguá",
-      "Café da manhã com bolo de jussara e suco de araçá",
-      "Passeio pela baía de Paranaguá, observação de cetáceos",
-      "Almoço Caiçara com Barreado ou Peixe",
-      "Trilhas Restinga e Manguezal",
-      "Oficina de artesanato"
-    ],
-    highlight: "Experiência completa de imersão na cultura caiçara",
-  },
-  {
-    id: 1,
-    image: heroCoast,
-    title: "Sua Rota Caiçara Detalhada:",
-    routeSteps: [
-      "Início no MAE - Paranaguá",
-      "Café da manhã com bolo de jussara e suco de araçá",
-      "Passeio pela baía de Paranaguá, observação de cetáceos",
-      "Almoço Caiçara com Barreado ou Peixe",
-      "Trilhas Restinga e Manguezal",
-      "Oficina de artesanato"
-    ],
-    highlight: "Experiência completa de imersão na cultura caiçara",
+    id: 3,
+    image: tie,
+    title: "Trilhas e Observação de Fauna",
+    description:
+      "Explore a Mata Atlântica com guias locais especializados. Observação de aves, fauna nativa e conexão profunda com a natureza.",
+    highlight: "Mais de 200 espécies de aves catalogadas",
   },
 ];
 
